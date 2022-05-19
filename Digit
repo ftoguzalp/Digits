@@ -1,0 +1,13 @@
+def isdivisible():
+    Number=input("Enter a number:")
+    sum=0
+    for digit in Number:
+        sum+=int(digit)
+
+    if (int(Number) % sum == 0):
+        return "This number is divisible by sum of it's digits"
+    else:
+        return "This number is not divisible by sum of it's digits"
+
+
+print(isdivisible())
